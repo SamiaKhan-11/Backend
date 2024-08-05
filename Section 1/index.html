@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+
+    <link
+        href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+        rel="stylesheet" />
+    <style>
+        :root {
+            --theme-color: #f1b17a;
+            --accent-color: white;
+        }
+
+        * {
+            font-family: Montserrat;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .card {
+            margin: 10%;
+            /*this is same for body padding*/
+            display: flex;
+            width: 40%;
+            box-sizing: border-box;
+            background-color: white;
+            box-shadow: 3px 3px 10px 2px black;
+            border-radius: 10px;
+
+
+
+        }
+
+        .left {
+            background-color: var(--theme-color);
+            padding: 20px;
+            width: 55%;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            align-content: center;
+            /* background-image: url(https://royaltyfreefootages.com/upload/video/1633088594_Zoom%20Business%20background.jpg); */
+        }
+
+        .first-h {
+            /* margin-top: -70px; */
+            margin-bottom: 20px;
+        }
+
+        .right {
+            padding: 20px;
+
+
+        }
+
+        body {
+            /* overflow: hidden; */       /*For removing scrolling effect*/
+            position: fixed;              /*For removing scrolling effect*/
+            /* padding: 12%; */
+            /*This is same for card margin*/
+            display: flex;
+            align-items: center;
+            margin: 0;
+            justify-content: center;
+            /* background-color: var(--theme-color); */
+            height: 100%;
+            background-image: url(https://royaltyfreefootages.com/upload/video/1633088594_Zoom%20Business%20background.jpg);
+
+        }
+
+        .brand {
+            text-align: center;
+            padding: 5px;
+            text-transform: uppercase;
+            color: var(--theme-color);
+            ;
+        }
+
+        .form-title {
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .text-input {
+            margin-bottom: 20px;
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            border-bottom: 2px solid var(--theme-color);
+            background-color: var(--theme-color);
+
+        }
+
+        .submit-btn {
+            padding: 5px;
+            background-color: var(--theme-color);
+
+            color: aliceblue;
+            border: none;
+            font-weight: bold;
+            border-radius: 5px;
+            box-shadow: 3px 3px 10px 2px black;
+
+        }
+
+        .text-input,
+        .submit-btn {
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .link {
+            text-decoration: none;
+            color: var(--theme-color);
+            margin-bottom: 30px;
+            display: block;
+        }
+
+        .signin-link {
+            text-decoration: none;
+            color: var(--theme-color);
+            text-align: center;
+            display: block;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="left">
+            <h1 class="first-h">Welcome to our website</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi odio consequuntur nisi quam culpa
+                expedita quos doloribus dolorem delectus quis exercitationem commodi accusamus, nesciunt iste
+                perferendis. Fugit ab placeat consequatur.</p>
+        </div>
+        <div class="right">
+            <h2 class="brand">Brand Name</h2>
+            <h3 class="form-title">Login Page</h3>
+
+            <form>
+
+                <label for="name">Name</label>
+                <input class="text-input" type="text" id="text" placeholder="Name">
+                <label for="email">E-mail Address</label>
+                <input class="text-input" type="email" id="email" placeholder="email">
+                <label for="password">Password</label>
+                <input class="text-input" type="password" id="password" placeholder="Password">
+                <a href="https://www.google.com" class="link" target="_blank">Forgot Password?</a>
+                <button class="submit-btn">Submit</button>
+                <a href="#" class="signin-link">Already have an account! Sigh-in</a>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="style.css">
+    <!-- <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .card {
+            text-align: center;
+            margin: 15%;
+            margin-left: 29%;
+            border: 2px solid black;
+            width: 40%;
+        }
+
+        body {
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+    </style> -->
+</head>
+
+<body>
+    <div class="card">
+        <h1>Student Admission Form</h1>
+        <form>
+            <label for="">Student Name</label>
+            <input type="text">
+            <br>
+            <label for="">Email Address</label>
+            <input type="email" name="email" id="email">
+            <br>
+            <label for="">Date of Birth</label>
+            <input type="date">
+            <br>
+            <label for="gender">Gender :</label>
+            Male<input type="radio" name="gender">
+            Female<input type="radio" name="gender">
+            <br>
+            <label for="">Select Course</label>
+            <select>
+                <option>Select option</option>
+                <option>Mern Stack Development</option>
+                <option>Python Data science</option>
+                <option>Data Analytics</option>
+                <option>Artificial Intelligence</option>
+                <option>React NodeJs</option>
+            </select>
+            <br>
+            <label>Select College</label>
+            <input type="text" list="College">
+            <datalist id="college">
+                <option>Integral University</option>
+                <option>BBD University</option>
+                <option>SRM University</option>
+                <option>Amity University</option>
+            </datalist>
+            <br>
+            <label>Address</label>
+            <textarea rows="4" cols="50"></textarea>
+            <br>
+            <input type="checkbox" name="" id="">Accept terms and condition
+            <br>
+            <details>
+                <summary>View terms and condition</summary>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum non perspiciatis sit explicabo
+                    laboriosam enim numquam minus cupiditate autem deserunt?</p>
+            </details>
+            <button class="move-top-btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>

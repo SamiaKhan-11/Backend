@@ -1,0 +1,33 @@
+.move-top-btn{
+    background-color: crimson;
+    color: white;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 5px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    text-align: center;
+    margin: 10%;
+    margin-left: 29%;
+    border: 2px solid black;
+    width: 40%;
+}
+
+body {
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    overflow: hidden;
+    
+}
+
+/* body{
+    height: 200vh;
+} */

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+    <link
+        href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+        rel="stylesheet" />
+
+    <style>
+        :root {
+            --theme-color: #df1447f8;
+            --accent-color: white;
+        }
+
+        * {
+            font-family: Montserrat;
+            /* margin: 0; */
+            /* padding: 0; */
+
+        }
+
+        .card {
+            margin: 10%;
+            /*this is same for body padding*/
+            display: flex;
+            width: 40%;
+            height: 50vh;
+            box-sizing: border-box;
+            background-color: white;
+            box-shadow: 3px 3px 10px 2px black;
+    
+
+
+
+        }
+
+        .left {
+            background-color: var(--theme-color);
+            padding: 20px;
+            width: 85%;
+            align-content: center;
+           
+        }
+
+        .logo {
+            margin-top: -90%;
+            color: white;
+
+
+
+        }
+
+        .first-h {
+            margin-top: 150px;
+            margin-left: 20px;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .Arrow {
+        
+            display: inline;
+            color: white;
+            width: 20%;
+            border-radius: 50%;
+            padding: 20px;
+            margin-left: 95%;
+            background-color: var(--theme-color);
+        }
+       
+
+        .right {
+            padding: 20px;
+
+
+        }
+
+        .button {
+            margin-left: 60%;
+            display: flex;
+            
+        }
+        .sign-up{
+            padding: 10px;
+            background-color: #2f5efc;
+            color: white;
+            font-weight: 500;
+            border: none;
+            box-shadow: 3px 3px 10px black;
+        }
+        .login{
+            padding: 10px;
+            background-color: white;
+            color: #2f5efc;
+            font-weight: 600;
+            text-transform: uppercase;
+            border: none;
+            box-shadow: 3px 3px 10px black;
+        }
+
+        .signup {
+            margin-left: 100%;
+        }
+
+        body {
+            /* padding: 12%; */
+            /*This is same for card margin*/
+            display: flex;
+            align-items: center;
+            margin: 0;
+            justify-content: center;
+            height: 100%;
+            background-color: #b3083b;
+
+        }
+
+        .form-content {
+            margin: 40px;
+        }
+
+        .form-content ::placeholder {
+            color: var(--theme-color);
+        }
+
+        .form-text {
+            color: var(--theme-color);
+            font-weight: 600;
+        }
+
+        .text-input {
+            margin-bottom: 20px;
+            margin-top: 10px;
+            padding: 10px;
+            border: none;
+            border-width: 100%;
+            border-bottom: 2px solid rgba(243, 57, 88, 0.295);
+
+
+        }
+        .checkbox{
+            color: var(--theme-color);
+            font-weight: 500;
+        }
+
+        .submit-btn {
+            padding: 10px;
+            margin-top: 30px;
+            background-color: var(--theme-color);
+            color: aliceblue;
+            border: none;
+            font-weight: bold;
+            box-shadow: 3px 3px 10px 2px black;
+
+        }
+
+        .text-input {
+
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+       
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+
+        <div class="left">
+            <h3 class="logo">Website</h3>
+            <h1 class="first-h">Sign Up</h1>
+<!-- <hr width="20%" size="2" margin-left="-20px"> -->
+            <div class="Arrow">
+                <i style="font-size:20px" class="fa">&#xf054;</i>
+            </div>
+        </div>
+        <div class="right">
+            <div class="button">
+                <button class="sign-up">Sign-up</button>
+                <button class="login">Login</button>
+            </div>
+            <form class="form-content">
+
+                <label class="form-text" for="name">Full Name</label>
+                <input class="text-input" type="text" id="text" placeholder="Enter your full name">
+                <label class="form-text" for="password">Password</label>
+                <input class="text-input" type="password" id="password" placeholder="Enter your password">
+                <label class="form-text" for="email">E-mail Address</label>
+                <input class="text-input" type="email" id="email" placeholder="Enter your email">
+                <input  type="checkbox"><lable class="checkbox" >
+                I agree in following <u>terms and conditions</u></lable>
+                <button class="submit-btn">SIGN UP</button>
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
