@@ -45,7 +45,7 @@ router.get('/getbycity/:city', (req, res) => {
 
 
 router.get('/getbyemail/:email', (req, res) => {
-   Model.findOne({ email: req.params.email })
+   Model.find({ email: req.params.email })
       .then((result) => {
          res.status(200).json(result);
       }).catch((err) => {
@@ -112,22 +112,16 @@ router.post('/authenticate', (req, res) => {
                   } else {
                      res.status(200).json({ token: token })
                   }
-
                }
             )
-
          } else {
             res.status(401).json({ message: 'Invalid Credentials' })
          }
       }).catch((err) => {
          console.log(err);
-         res.status(500).json(err);
+         res.status(500).json(err)
       });
 })
-
-
-
-
 module.exports = router;
 
 
